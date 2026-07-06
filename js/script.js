@@ -123,18 +123,18 @@ fadeElements.forEach((fadeElement) => {
 });
 
 // 画像ギャラリー
-const mainInage = document.querySelector('.gallery-image img');
+const mainImage = document.querySelector('.gallery-image img');
 const thumbImages = document.querySelectorAll('.gallery-thumbnails img');
 
 for(let i = 0; i < thumbImages.length; i++) {
   thumbImages[i].addEventListener('mouseover', (event) => {
-    mainInage.src = event.target.src;
-    mainInage.animate({opacity: [0, 1]}, 500);
+    mainImage.src = event.target.src;
+    mainImage.animate({opacity: [0, 1]}, 500);
   });
 }
 thumbImages.forEach((thumbImage)=>{
   thumbImage.addEventListener('mouseover', (event) => {
-    mainInage.src = event.target.src;
-    mainInage.animate({opacity: [0, 1]}, 500);
+    mainImage.src = event.target.src;
+    mainImage.animate({opacity: [0, 1]}, 500);
   });
 });
