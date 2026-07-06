@@ -130,6 +130,7 @@ LAYOUT
 
 /* 閉じるボタン */
 #menu-close {
+    background-color: var(--brown);
     border: 1px solid var(--light-green);
 }
 #menu-close svg {
@@ -261,6 +262,9 @@ DESKTOP SIZE
 
 /* SLIDE MENU */
     .btn-menu:hover {
+        background-color: var(--light-green);
+    }
+    #menu-close:hover {
         background-color: var(--light-green);
     }
     #menu-close:hover svg {
